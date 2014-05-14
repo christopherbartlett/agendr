@@ -36,7 +36,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2/php
 mkdir -p "$CACHE_DIR"
 ENV_DIR=${3:-} # Anvil has none
-BP_DIR=$(cd $(dirname $0); cd ..; pwd)
+BP_DIR=$(cd ..; pwd)
 
 # convenience functions
 source $BP_DIR/bin/common.sh
